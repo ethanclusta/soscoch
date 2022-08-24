@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    p {
+      @apply text-sm;
+    }
+    h2 {
+      @apply text-lg;
+      @apply font-bold
+    }
+    h3 {
+        @apply text-base;
+        @apply font-semibold
+      }
+    a {
+        @apply underline
+    }
+  }
+
+@font-face {
+    font-family: 'Staatliches';
+    src: url("/fonts/Staatliches-Regular.ttf");
+  }

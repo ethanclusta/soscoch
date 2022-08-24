@@ -1,0 +1,19 @@
+import { error } from '@sveltejs/kit';
+import { API_KEY, ROOT_URL } from '../config/env'
+
+// const url = get(ROOT_URL);
+// const key = get(API_KEY);
+
+/** @type {import('./$types').PageServerLoad} */
+export function load() {
+    async function getPost() {
+        const res = await fetch(ROOT_URL + '?key=' + API_KEY + '&filter=tag:film');
+        const resJson = await res.json();
+        if (res.ok) {
+            return resJson;
+        } else {
+            throw error(404, 'Not found');
+        }
+    }
+    return getPost();
+}
