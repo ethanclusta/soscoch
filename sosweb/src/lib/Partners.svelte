@@ -1,42 +1,31 @@
-<script>
-    import Lottery from '$lib/assets/Lottery.png';
-	import MTC from '$lib/assets/MachCouncil.png';
-	import PAVO from '$lib/assets/PAVO.png';
-	import Powys from '$lib/assets/PowysCouncil.png';
-	import UKGov from '$lib/assets/UKGov.png';
-	import Vis from '$lib/assets/VisImpact.png';
-	import Vid from '$lib/assets/Videndum.png';
-    import BFILot from '$lib/assets/BFILOTTERY.png';
-    import C4A from '$lib/assets/CIN4ALL.png';
-</script>
 <div class="flex flex-col md:flex-row lg:flex-col xl:flex-row flex-wrap gap-2 mt-2">
     <div class="flex gap-2 flex-wrap">
         <div class="flex place-content-center h-14">
-            <img class="h-full" alt="Lottery" src={UKGov} />
+            <img class="h-full" alt="Lottery" src='/assets/UKGOV.png' />
         </div>
         <div class="flex h-14">
-            <img class="h-full" alt="Lottery" src={Powys} />
+            <img class="h-full" alt="Lottery" src='/assets/PowysCouncil.png' />
         </div>
         <div class="flex h-14 place-content-center">
-            <img class="h-full" alt="Lottery" src={Lottery} />
+            <img class="h-full" alt="Lottery" src='/assets/Lottery.png' />
         </div>
         <div class="flex place-content-center h-14">
-            <img class="h-full" alt="Lottery" src={MTC} />
+            <img class="h-full" alt="Lottery" src='/assets/MachCouncil.png' />
         </div>
         <div class="flex place-content-center h-14">
-            <img class="h-full" alt="Lottery" src={PAVO} />
+            <img class="h-full" alt="Lottery" src='/assets/PAVO.png' />
         </div>
         <div class="flex place-content-center h-14">
-            <img class="h-full" alt="Lottery" src={Vis} />
+            <img class="h-full" alt="Lottery" src='/assets/VisImpact.png' />
         </div>
         <div class="flex h-14">
-            <img class="h-full" alt="Lottery" src={Vid} />
+            <img class="h-full" alt="Lottery" src='/assets/Videndum.png' />
         </div>
         <div class="flex h-14">
-            <img class="h-full" alt="Lottery" src={C4A} />
+            <img class="h-full" alt="Lottery" src='/assets/CIN4ALL.png' />
         </div>
         <div class="flex place-content-center h-14">
-            <img class="h-full" alt="Lottery" src={BFILot} />
+            <img class="h-full" alt="Lottery" src='/assets/BFILOTTERY.png' />
         </div>
     </div>
 </div>
