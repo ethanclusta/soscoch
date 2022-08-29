@@ -111,5 +111,12 @@
 	<div class="w-full text-3xl font-bold text-black mt-3">OUR PARTNERS</div>
 	<div>Sôs Coch Sinema has received funding and support from the following:</div>
 	<Partners />
-    <div class="text-sm text-gray-700 text-right">Website made by <a href="https://clusta.live" target="_blank">Clusta.</a></div>
+	<hr class="opacity-90" />
+	<p class="text-[0.7rem] text-slate-700">
+		Sôs Coch Sinema is a project by Stiwdio Dyfi CIC.<br />Company No 13843739 registered in England and Wales<br />205 Y Plas
+		Aberystwyth Road Machynlleth Powys SY20 8ER United Kingdom<br />stiwdiodyfi@gmail.com
+	</p>
+	<div class="text-sm text-gray-700 text-right">
+		Website made by <a href="https://clusta.live" target="_blank">Clusta.</a>
+	</div>
 </div>

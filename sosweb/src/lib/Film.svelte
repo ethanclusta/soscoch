@@ -30,14 +30,14 @@
 			</div>
             {#if splitStr.length > 60 && showFull === false}
 			<p>
-				{@html joined}
+				{joined}
 				{#if splitStr.length > 60}
 					<span on:click={toggleShow} class="underline cursor-pointer">more</span>
 				{/if}
 			</p>
             {:else}
             <p>
-                {@html full}
+                {full}
                 <span on:click={toggleShow} class="underline cursor-pointer">less</span>
             </p>
             {/if}
