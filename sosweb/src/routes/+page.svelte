@@ -33,13 +33,13 @@
 	};
 </script>
 
-<div class="flex flex-col bg-zinc-200 gap-3 divide-y-4 w-full lg:w-1/2 p-6">
+<div class="flex flex-col bg-zinc-200 gap-3 divide-y-4 w-full lg:w-1/2 p-3 lg:p-6">
 	<div class="w-full text-3xl font-bold text-black">ON THIS WEEK</div>
 	{#each posts as film (film.id)}
 		<Film info={film} />
 	{/each}
 </div>
-<div class="flex flex-col bg-zinc-200 gap-3 w-full lg:w-1/2 p-6 h-fit">
+<div class="flex flex-col bg-zinc-200 gap-3 w-full lg:w-1/2 p-3 lg:p-6 h-fit">
 	<div class="w-full text-3xl font-bold text-black">INFO</div>
 	<div class="font-semibold text-xl bg-zinc-100 p-3 shadow-md">
 		Sôs Coch Sinema is a community cinema project currently operating at <span
