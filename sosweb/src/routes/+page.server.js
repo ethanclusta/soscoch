@@ -7,7 +7,7 @@ import { API_KEY, ROOT_URL } from '../config/env'
 /** @type {import('./$types').PageServerLoad} */
 export function load() {
     async function getPost() {
-        const res = await fetch(ROOT_URL + '?key=' + API_KEY + '&filter=tag:film');
+        const res = await fetch(ROOT_URL + '?key=' + API_KEY + '&filter=tag:film&order=published_at%20asc');
         const resJson = await res.json();
         if (res.ok) {
             return resJson;
