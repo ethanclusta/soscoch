@@ -26,7 +26,7 @@
 			<div class="font-sos text-red-500 text-2xl">{info.title}</div>
 			{@html titles}
 			<div class="my-2">
-				<span class="bg-red-500 text-white cursor-pointer font-bold p-2 text-sm">Book tickets</span>
+				<span class="bg-red-500 text-white cursor-pointer font-bold p-2 text-sm"><a class="no-underline" href={info.excerpt}>Book tickets</a></span>
 			</div>
             {#if splitStr.length > 60 && showFull === false}
 			<p>
