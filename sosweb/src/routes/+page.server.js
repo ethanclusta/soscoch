@@ -1,5 +1,8 @@
-import { error } from '@sveltejs/kit';
-import { API_KEY, ROOT_URL } from '../config/env'
+// import { error } from '@sveltejs/kit';
+// import { API_KEY, ROOT_URL } from '../config/env'
+
+const ROOT_URL = 'https://api.ethancorcoran.com/ghost/api/content/posts/';
+const API_KEY = 'aad5c2662382fa777c43c80a7d';
 
 // const url = get(ROOT_URL);
 // const key = get(API_KEY);
