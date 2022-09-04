@@ -42,8 +42,8 @@
 <div class="flex flex-col bg-zinc-200 gap-3 w-full lg:w-1/2 p-3 lg:p-6 h-fit">
 	<div class="w-full text-3xl font-bold text-black">INFO</div>
 	<div class="font-semibold text-xl bg-zinc-100 p-3 shadow-md">
-		Sôs Coch Sinema is a community cinema project currently operating at <span
-			class="underline cursor-pointer">MOMA Machynlleth's Tabernacle</span
+		Sôs Coch Sinema is a community cinema project currently operating at <a
+			href="https://moma.cymru" target="_blank" class="underline cursor-pointer">MOMA Machynlleth's Tabernacle</a
 		> venue, Wales.
 	</div>
 	<div class="p-3 flex flex-col gap-2 bg-zinc-100 shadow-md">
@@ -57,13 +57,13 @@
 		<div class="text-sm">
 			Screenings will be every Thursday and Saturday during September and October and will include a
 			weekly Sports Action screening, a contemporary or 'world cinema' title, a horror night and a
-			cinefile selection under 'Keith Turbo presents…' - with variations of this as the season
+			cinephile selection under 'Keith Turbo presents…' - with variations of this as the season
 			progresses.
 		</div>
 	</div>
 	<div class="flex flex-col gap-2 bg-zinc-300 shadow-md text-lg p-3">
 		<div>
-			<span class="font-semibold">All tickets £5.00</span><br />Doors open half an hour before
+			<span class="font-semibold">Tickets £5.00<br />Under 15s £3.00</span><br />Doors open half an hour before
 			screening commences<br />Tickets available on the door (card & cash)<br />General admission
 			(seating isn't numbered)
 		</div>
