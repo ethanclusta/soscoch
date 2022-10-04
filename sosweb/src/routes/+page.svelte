@@ -4,6 +4,7 @@
 
 	import { db } from '../config/firebase';
 	import { doc, setDoc } from 'firebase/firestore';
+	import Modal from '../lib/Modal.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -31,35 +32,32 @@
 			add();
 		}
 	};
+
+	let showModal = false;
+	const toggleModal = () => {
+		showModal = !showModal;
+	};
 </script>
 
+{#if showModal}
+ <Modal on:click={toggleModal} />
+{/if}
 <div class="flex flex-col bg-zinc-200 gap-3 divide-y-4 w-full lg:w-1/2 p-3 lg:p-6">
 	<div class="w-full text-3xl font-bold text-black">ON THIS WEEK</div>
-	{#each posts as film (film.id)}
+	{#each posts as film, i (film.id)}
+		{#if i === 4}
+		<div class="w-full text-3xl font-bold text-black">COMING UP</div>
+		{/if}
 		<Film info={film} />
 	{/each}
 </div>
 <div class="flex flex-col bg-zinc-200 gap-3 w-full lg:w-1/2 p-3 lg:p-6 h-fit">
 	<div class="w-full text-3xl font-bold text-black">INFO</div>
+	<div on:click={toggleModal} class="bg-red-500 text-white font-bold text-xl p-3 text-center cursor-pointer">WIN 4 FREE TICKETS TO SÔS COCH SINEMA</div>
 	<div class="font-semibold text-xl bg-zinc-100 p-3 shadow-md">
 		Sôs Coch Sinema is a community cinema project currently operating at <a
 			href="https://moma.cymru" target="_blank" class="underline cursor-pointer">MOMA Machynlleth's Tabernacle</a
-		> venue, Wales.
-	</div>
-	<div class="p-3 flex flex-col gap-2 bg-zinc-100 shadow-md">
-		<div class="text-sm">
-			Sôs Coch Sinema launches an initial eight week season of screenings at The Tabernacle
-			commencing Sat 2nd September until Sat 29th October 2022.
-		</div>
-		<div class="text-sm">
-			We hope to garner enough interest in a community cinema in Machynlleth to be able to continue.
-		</div>
-		<div class="text-sm">
-			Screenings will be every Thursday and Saturday during September and October and will include a
-			weekly Sports Action screening, a contemporary or 'world cinema' title, a horror night and a
-			cinephile selection under 'Keith Turbo presents…' - with variations of this as the season
-			progresses.
-		</div>
+		> venue, Wales, running until the end of October 2022.
 	</div>
 	<div class="flex flex-col gap-2 bg-zinc-300 shadow-md text-lg p-3">
 		<div>
