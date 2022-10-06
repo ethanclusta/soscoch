@@ -17,6 +17,7 @@
 
 	const add = async () => {
 		loading = true;
+		email = email.trim();
 		await setDoc(doc(db, 'signups', email), {
 			email: email,
 			source: 'Sos Coch',
