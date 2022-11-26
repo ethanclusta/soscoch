@@ -10,7 +10,7 @@ const API_KEY = 'aad5c2662382fa777c43c80a7d';
 /** @type {import('./$types').PageServerLoad} */
 export function load() {
     async function getPost() {
-        const res = await fetch(ROOT_URL + '?key=' + API_KEY + '&filter=tag:film&order=published_at%20asc');
+        const res = await fetch(ROOT_URL + '?key=' + API_KEY + '&filter=tag:film&order=published_at%20desc&limit=all');
         const resJson = await res.json();
         if (res.ok) {
             return resJson;
